@@ -9,7 +9,9 @@ const {
 function createWindow() {
     const win = new BrowserWindow({
         width: 800,
-        height: 600
+        height: 600,
+        minWidth: 550,
+        minHeight: 550
     })
 
     const view = new BrowserView()

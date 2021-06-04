@@ -8,7 +8,6 @@ const path = require("path")
 
 const open = require('open')
 
-
 function createWindow() {
     const window = new BrowserWindow({
         height: 800,
@@ -19,10 +18,8 @@ function createWindow() {
         minHeight: 400,
         // icon: 'TODO',
         webPreferences: {
-            nodeIntegration: true,
-            contextIsolation: false,
-            enableRemoteModule: true,
             webviewTag: true,
+            contextIsolation: false
         }
     })
 

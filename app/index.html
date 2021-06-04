@@ -33,14 +33,18 @@
 
             <!-- Input -->
             <div id="inputDiv">
-                <input type="text" id="inputField" placeholder="Search" autofocus spellcheck="true" onclick="this.select()">
+                <form>
+                    <input type="text" id="inputField" placeholder="Search" autofocus spellcheck="true" onclick="this.select()">
+                    <button type="submit" id="goButton" hidden></button>
+                </form>
             </div>
             <!-- Input End -->
 
         </div>
 
-        <div id="webView">
-            <!-- TODO -->
+        <div id="mainWebViewContainer">
+            <webview id="mainWebView" src="https://google.co.uk">
+            </webview>
         </div>
     </div>
 

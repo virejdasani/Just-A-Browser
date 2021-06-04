@@ -98,6 +98,9 @@ function resizeWebView() {
 // This filters and loads the website argument to the webview
 function loadSiteToWebView(value) {
     let url
+    
+    // TODO - make it so that if the website doesn't exist, it googles it
+
     // if (google), then search it on google
     if (!value.includes("http") && !value.includes(".")) {
         // url = "https://" + website + ".com"

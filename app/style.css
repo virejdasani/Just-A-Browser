@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+#app {
+    background-color: #363636;
+    color: black;
+    min-height: 400px;
+    height: 100%;
+    height: 100%;
+    overflow-y: scroll !important;
+}
+
+#topBar {
+    width: 100%;
+    position: fixed;
+    background-color: #4c4c4c;
+    padding-bottom: 0;
+    overflow: hidden;
+}
+
+#controlsDiv {
+    /* position: absolute; */
+    display: inline-flex;
+    margin-left: 15px;
+}
+
+.controls {
+    padding: 6px;
+    border-radius: 60px;
+    color: #f8f8f8;
+    font-size: 22px;
+    margin-top: 8px;
+}
+
+.controls:hover {
+    background-color: rgb(103, 103, 103);
+    transition: 100ms ease-in-out;
+}
+
+.controls:active {
+    background-color: rgb(88, 88, 88);
+}
+
+#inputDiv {
+    position: absolute;
+    display: inline-flex;
+    width: 80%;
+}
+
+#inputField {
+    /* TODO - Add google icon instead og search icon */
+    background-image: url("./assets/searchIcon.png");
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: 99% center;
+    
+    position: absolute;
+    display: inline-flex;
+    border: none;
+    background-color: #ebebeb;
+    outline: none;
+    width: 90%;
+    padding: 5px;
+    border-radius: 50px;
+    text-indent: 6px;
+    top: 10px;
+    left: 1%;
+}
+
+#inputField:hover {
+    background-color: #e0e0e0;
+    transition: 100ms ease-in-out;
+}
+
+#inputField:focus {
+    background-color: #e4e4e4;
+    transition: 100ms ease-in-out;
+}

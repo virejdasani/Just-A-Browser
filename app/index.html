@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Font Awesome for icons -->
+    <script defer src="node_modules/@fortawesome/fontawesome-free/js/brands.js"></script>
+    <script defer src="node_modules/@fortawesome/fontawesome-free/js/solid.js"></script>
+    <script defer src="node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Browser</title>
+</head>
+
+<body>
+
+    <div id="app">
+
+        <div id="topBar">
+
+            <!-- Controls -->
+            <div id="controlsDiv">
+                <i id="homeButton" class="fas fa-home fa-3x controls"></i>
+                <i id="backButton" class="fas fa-arrow-circle-left fa-3x controls"></i>
+                <i id="forwardButton" class="fas fa-arrow-circle-right fa-3x controls"></i>
+                <i id="reloadButton" class="fas fa-redo-alt fa-3x controls"></i>
+            </div>
+            <!-- Controls End -->
+
+            <!-- Input -->
+            <div id="inputDiv">
+                <input type="text" id="inputField" placeholder="Search" autofocus spellcheck="true">
+            </div>
+            <!-- Input End -->
+
+        </div>
+
+        <div id="webView">
+            <!-- TODO -->
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

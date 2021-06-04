@@ -1,0 +1,6 @@
+# Don't add .DS_Store from any directory
+**/.DS_Store
+
+app/node_modules
+
+builds

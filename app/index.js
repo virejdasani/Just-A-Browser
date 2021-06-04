@@ -96,9 +96,26 @@ function resizeWebView() {
 }
 
 // This filters and loads the website argument to the webview
-function loadSiteToWebView(website) {
-    document.querySelector("#mainWebView").setAttribute("src", website)
-
+function loadSiteToWebView(value) {
+    let url
+    // if (google), then make it (https://google.com)
+    if (!value.includes("http") && !value.includes(".")) {
+        // url = "https://" + website + ".com"
+        url = "https://www.google.com/search?q=" + value
+    }
+    // if (http(s)://google), then make it (http(s)://google.com)
+    else if (value.includes("http") && !value.includes(".")) {
+        url = value + ".com"
+    }
+    // if (google.(*)), then make it (https://google.(*))
+    else if (!value.includes("http") && value.includes(".")) {
+        url = "https://" + value
+    }
+    // if (https://google.com), then keep it (https://google.com)
+    else {
+        url = value
+    }
+    document.querySelector("#mainWebView").setAttribute("src", url)
 }
 
 // console.log(document.querySelector("#mainWebView").getAttribute("src"))

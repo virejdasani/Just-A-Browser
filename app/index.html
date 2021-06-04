@@ -16,12 +16,12 @@
     <title>Browser</title>
 </head>
 
-<body>
+<body onresize="resizeWebView()">
 
     <div id="app">
 
+        <!-- Top Bar -->
         <div id="topBar">
-
             <!-- Controls -->
             <div id="controlsDiv">
                 <i id="homeButton" class="fas fa-home fa-3x controls"></i>
@@ -39,13 +39,24 @@
                 </form>
             </div>
             <!-- Input End -->
-
         </div>
+        <!-- Top Bar End -->
 
+        <!-- Tabs -->
+        <div id="tabContainer">
+            <button class="tab0" onclick="openTab(event, 'tab0')">tab0</button>
+            <button class="tab1" onclick="openCity(event, 'tab1')">tab1</button>
+            <button class="tab2" onclick="openCity(event, 'tab2')">tab2</button>
+        </div>
+        <!-- Tabs End -->
+
+        <!-- Webview -->
         <div id="mainWebViewContainer">
-            <webview id="mainWebView" src="https://google.co.uk">
+            <webview id="mainWebView" src="https://google.com">
             </webview>
         </div>
+        <!-- Webview End -->
+
     </div>
 
     <script src="index.js"></script>

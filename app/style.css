@@ -91,9 +91,10 @@ html, body {
 
 #mainWebViewContainer {
     position: absolute;
-    width: 100%;
+    top: 48px;
+    left: 60px;
+    width: 1090px;
     height: 100%;
-    top: 50px;
     z-index: 10;
 }
 

@@ -59,7 +59,7 @@ html, body {
 }
 
 #inputField {
-    /* TODO - Add google icon instead og search icon */
+    /* TODO - Add google icon instead of search icon */
     background-image: url("./assets/searchIcon.png");
     background-size: 20px 20px;
     background-repeat: no-repeat;
@@ -87,6 +87,14 @@ html, body {
 #inputField:focus {
     background-color: #2c2c2c;
     transition: 100ms ease-in-out;
+}
+
+#tabContainer {
+    position: absolute;
+    height: 100%;
+    width: 60px;
+    top: 48px;
+    background-color: #383838;
 }
 
 #mainWebViewContainer {

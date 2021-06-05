@@ -3,6 +3,7 @@ const webview = document.getElementById("mainWebView")
 const webviewContainer = document.getElementById("mainWebViewContainer")
 const goButton = document.getElementById("goButton")
 
+// This is so that the webview looks normal every time the window is reloaded
 window.onload = resizeWebView()
 
 document.addEventListener("keyup", (e) => {

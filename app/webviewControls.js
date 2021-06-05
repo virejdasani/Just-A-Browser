@@ -32,18 +32,8 @@ webview.addEventListener('dom-ready', () => {
         location.href = 'index.html'
     })
 
-    // webview.addEventListener('page-title-updated', () => {
-    //     // When a page title changes
-    // })
-
-    // When the site in the webview is loading
-    webview.addEventListener('did-start-loading', () => {
-        // TODO - add loading animation
-    })
-
-    // When the site in the webview has been loaded successfully
-    webview.addEventListener('did-stop-loading', () => {
-        // TODO - stop loading animation
+    webview.addEventListener('page-title-updated', (title) => {
+        document.getElementById("tabText0").innerText = title.title
     })
 
     // If the page url is updated, the url is reflected in the input field. Note, 'update-target-url' also works instead of 'did-navigate'
@@ -54,5 +44,16 @@ webview.addEventListener('dom-ready', () => {
     // Update the favicon onto the tab button
     webview.addEventListener('page-favicon-updated', (favicon) => {
         document.getElementById("tab0").style.backgroundImage = "url('" + favicon.favicons[0] + "')"
+    })
+
+
+    // When the site in the webview is loading
+    webview.addEventListener('did-start-loading', () => {
+        // TODO - add loading animation
+    })
+
+    // When the site in the webview has been loaded successfully
+    webview.addEventListener('did-stop-loading', () => {
+        // TODO - stop loading animation
     })
 })

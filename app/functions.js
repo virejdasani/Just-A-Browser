@@ -24,10 +24,6 @@ function loadSiteToWebView(value) {
     document.querySelector("#mainWebView").setAttribute("src", url)
 }
 
-
-// This is so that the webview looks normal every time the window is reloaded
-
-
 // This is executed if the window is resized
 function resizeWebView() {
     // The newWebViewWidth is the width of the window - 60px because the tabs container is 60px
@@ -35,3 +31,4 @@ function resizeWebView() {
     // This sets the new style to the mainWebViewContainer
     document.getElementById("mainWebViewContainer").style.width = newWebViewWidth + "px"
 }
+

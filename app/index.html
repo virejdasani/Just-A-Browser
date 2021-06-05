@@ -34,7 +34,7 @@
             <!-- Input -->
             <div id="inputDiv">
                 <form>
-                    <input type="text" id="inputField" placeholder="Search" autofocus spellcheck="true" onclick="this.select()">
+                    <input type="text" id="inputField" placeholder="Search" autofocus spellcheck="false" onclick="this.select()">
                     <button type="submit" id="goButton" hidden></button>
                 </form>
             </div>
@@ -45,11 +45,20 @@
         <!-- Tabs -->
         <div id="tabContainer">
             <button id="tab0" class="tabs"></button>
-            <p class="tabsText">Google</p>
+            <p id="tabText0" class="tabsText"></p>
+            <hr id="activeHr">
+            <hr id="inactiveHr">
+            
             <button id="tab1" class="tabs"></button>
-            <p class="tabsText">Amazon</p>
+            <p id="tabText1" class="tabsText"></p>
+            <hr id="activeHr">
+            <hr id="inactiveHr">
+
             <button id="tab2" class="tabs"></button>
-            <p class="tabsText">Reddit</p>
+            <p id="tabText2" class="tabsText"></p>
+            <hr id="activeHr">
+            <hr id="inactiveHr">
+
             <button id="newTabButton" class="tabs">+</button>
 
         </div>

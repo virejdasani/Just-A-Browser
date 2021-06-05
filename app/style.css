@@ -104,29 +104,54 @@ body {
     width: 80%;
     margin-left: 10%;
     border-radius: 50px;
-    height: 46px;
+    height: 47px;
     border: none;
     margin-top: 8px;
     color: black;
-    background-color: #c0c0c0;
+    background-color: #9c9c9c;
+    outline: none;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
 }
 
 .tabs:hover {
     text-align: center;
-    width: 82%;
+    width: 80%;
     margin-left: 10%;
     border-radius: 50px;
-    height: 48px;
+    height: 47px;
     border: none;
     margin-top: 8px;
     color: black;
-    background-color: #e3e3e3;
-    transition: 200ms ease-in-out;
+    background-color: #b4b4b4;
+    transition: 150ms ease-in-out;
+    outline: none;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+}
+
+.tabs:active {
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 50px;
+    height: 47px;
+    border: none;
+    margin-top: 8px;
+    color: black;
+    transition: 150ms ease-in-out;
+    background-color: #9c9c9c;
+    outline: none;
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
 }
 
 .tabsText {
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
     margin: 1px;
 }
 

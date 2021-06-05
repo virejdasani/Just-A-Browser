@@ -84,6 +84,11 @@ webview.addEventListener('dom-ready', () => {
     webview.addEventListener('did-navigate', () => {
         document.getElementById("inputField").value = webview.getURL()
     })
+
+    // Update the favicon onto the tab button
+    webview.addEventListener('page-favicon-updated', (favicon) => {
+        document.getElementById("tab0").style.backgroundImage = "url('" + favicon.favicons[0] + "')"
+    })
 })
 
 // This is executed if the window is resized

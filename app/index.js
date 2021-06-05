@@ -83,7 +83,6 @@ webview.addEventListener('dom-ready', () => {
     // If the page url is updated, the url is reflected in the input field. Note, 'update-target-url' also works instead of 'did-navigate'
     webview.addEventListener('did-navigate', () => {
         document.getElementById("inputField").value = webview.getURL()
-        console.log(webview.getURL())
     })
 })
 
@@ -98,7 +97,7 @@ function resizeWebView() {
 // This filters and loads the website argument to the webview
 function loadSiteToWebView(value) {
     let url
-    
+
     // TODO - make it so that if the website doesn't exist, it googles it
 
     // if (google), then search it on google
@@ -120,6 +119,7 @@ function loadSiteToWebView(value) {
     }
     document.querySelector("#mainWebView").setAttribute("src", url)
 }
+
 
 // console.log(document.querySelector("#mainWebView").getAttribute("src"))
 // console.log(webview.getTitle())

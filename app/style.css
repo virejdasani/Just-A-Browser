@@ -4,9 +4,11 @@
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    color: white;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     overflow: hidden;
 }
@@ -64,7 +66,7 @@ html, body {
     background-size: 20px 20px;
     background-repeat: no-repeat;
     background-position: 99% center;
-    
+
     position: absolute;
     display: inline-flex;
     border: none;
@@ -95,6 +97,37 @@ html, body {
     width: 60px;
     top: 48px;
     background-color: #383838;
+}
+
+.tabs {
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 50px;
+    height: 46px;
+    border: none;
+    margin-top: 8px;
+    color: black;
+    background-color: #c0c0c0;
+}
+
+.tabs:hover {
+    text-align: center;
+    width: 82%;
+    margin-left: 10%;
+    border-radius: 50px;
+    height: 48px;
+    border: none;
+    margin-top: 8px;
+    color: black;
+    background-color: #e3e3e3;
+    transition: 200ms ease-in-out;
+}
+
+.tabsText {
+    text-align: center;
+    font-size: 14px;
+    margin: 1px;
 }
 
 #mainWebViewContainer {

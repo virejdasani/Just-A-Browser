@@ -103,12 +103,11 @@ body {
     text-align: center;
     width: 80%;
     margin-left: 10%;
-    border-radius: 50px;
+    /* border-radius: 50px; */
     height: 47px;
     border: none;
     margin-top: 8px;
-    color: black;
-    background-color: #9c9c9c;
+    background-color: #383838;
     outline: none;
     background-repeat: no-repeat;
     background-size: 90%;
@@ -123,8 +122,7 @@ body {
     height: 47px;
     border: none;
     margin-top: 8px;
-    color: black;
-    background-color: #b4b4b4;
+    background-color: #383838;
     transition: 150ms ease-in-out;
     outline: none;
     background-repeat: no-repeat;
@@ -140,9 +138,8 @@ body {
     height: 47px;
     border: none;
     margin-top: 8px;
-    color: black;
     transition: 150ms ease-in-out;
-    background-color: #9c9c9c;
+    background-color: #383838;
     outline: none;
     background-repeat: no-repeat;
     background-size: 60%;
@@ -153,6 +150,32 @@ body {
     text-align: center;
     font-size: 12px;
     margin: 1px;
+}
+
+#newTabButton {
+    position: absolute;
+    background-color: rgb(83, 83, 83);
+    bottom: 58px;
+    border-radius: 50px;
+    font-size: 30px;
+}
+
+#newTabButton:hover {
+    position: absolute;
+    background-color: rgb(95, 95, 95);
+    bottom: 58px;
+    border-radius: 50px;
+    font-size: 30px;
+    transition: 150ms ease-in-out;
+}
+
+#newTabButton:active {
+    position: absolute;
+    background-color: rgb(83, 83, 83);
+    bottom: 58px;
+    border-radius: 50px;
+    font-size: 30px;
+    transition: 150ms ease-in-out;
 }
 
 #mainWebViewContainer {

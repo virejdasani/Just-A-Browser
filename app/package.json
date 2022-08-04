@@ -1,10 +1,14 @@
 {
   "name": "just-a-browser",
   "version": "1.0.0",
-  "description": "",
+  "description": "Just a browser",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "pack-darwin-x64": "electron-packager . 'Just A Browser' --platform=darwin --arch=x64 --icon=assets/logo.icns --ignore=builds",
+    "pack-darwin-arm64": "electron-packager . 'Just A Browser' --platform=darwin --arch=arm64 --icon=assets/logo.icns --ignore=builds",
+    "pack-win32-x64": "electron-packager . 'Just A Browser' --platform=win32 --arch=x64 --icon=assets/logo.ico --ignore=builds",
+    "pack-linux-x64": "electron-packager . 'Just A Browser' --platform=linux --arch=x64 --icon=assets/logo.png --ignore=builds"
   },
   "repository": {
     "type": "git",

@@ -1,208 +1,216 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 * {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    color: white;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
 }
 
 html,
 body {
-    height: 100%;
-    overflow: hidden;
+  height: 100%;
+  overflow: hidden;
 }
 
 #app {
-    background-color: #363636;
-    color: black;
-    min-height: 400px;
-    height: 100%;
-    height: 100%;
-    overflow: hidden;
+  background-color: #363636;
+  color: black;
+  min-height: 400px;
+  height: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 #topBar {
-    width: 100%;
-    position: fixed;
-    background-color: #4c4c4c;
-    padding-bottom: 0;
-    overflow: hidden;
-    z-index: 1000;
+  width: 100%;
+  position: fixed;
+  background-color: #4c4c4c;
+  padding-bottom: 0;
+  overflow: hidden;
+  z-index: 1000;
 }
 
 #controlsDiv {
-    /* position: absolute; */
-    display: inline-flex;
-    margin-left: 15px;
+  /* position: absolute; */
+  display: inline-flex;
+  margin-left: 15px;
 }
 
 .controls {
-    padding: 6px;
-    border-radius: 60px;
-    color: #f8f8f8;
-    font-size: 22px;
-    margin-top: 8px;
+  padding: 6px;
+  border-radius: 60px;
+  color: #f8f8f8;
+  font-size: 22px;
+  margin-top: 8px;
 }
 
 .controls:hover {
-    background-color: rgb(103, 103, 103);
-    transition: 100ms ease-in-out;
+  background-color: rgb(103, 103, 103);
+  transition: 100ms ease-in-out;
 }
 
 .controls:active {
-    background-color: rgb(88, 88, 88);
+  background-color: rgb(88, 88, 88);
 }
 
 #inputDiv {
-    position: absolute;
-    display: inline-flex;
-    width: 80%;
+  position: absolute;
+  display: inline-flex;
+  width: 70%;
+}
+
+#credits {
+  padding-top: 14px;
+  margin-right: 10px;
+  display: inline-flex;
+  float: right;
+
 }
 
 #inputField {
-    /* TODO - Add google icon instead of search icon */
-    background-image: url("./assets/searchIcon.png");
-    background-size: 20px 20px;
-    background-repeat: no-repeat;
-    background-position: 99% center;
+  /* TODO - Add google icon instead of search icon */
+  background-image: url("./assets/searchIcon.png");
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: 99% center;
 
-    position: absolute;
-    display: inline-flex;
-    border: none;
-    background-color: #363636;
-    outline: none;
-    width: 90%;
-    padding: 5px;
-    border-radius: 50px;
-    text-indent: 6px;
-    top: 10px;
-    left: 1%;
-    color: white;
+  position: absolute;
+  display: inline-flex;
+  border: none;
+  background-color: #363636;
+  outline: none;
+  width: 90%;
+  padding: 5px;
+  border-radius: 50px;
+  text-indent: 6px;
+  top: 10px;
+  left: 1%;
+  color: white;
 }
 
 #inputField:hover {
-    background-color: #2c2c2c;
-    transition: 100ms ease-in-out;
+  background-color: #2c2c2c;
+  transition: 100ms ease-in-out;
 }
 
 #inputField:focus {
-    background-color: #2c2c2c;
-    transition: 100ms ease-in-out;
+  background-color: #2c2c2c;
+  transition: 100ms ease-in-out;
 }
 
 #tabContainer {
-    position: absolute;
-    height: 100%;
-    width: 60px;
-    top: 48px;
-    background-color: #383838;
+  position: absolute;
+  height: 100%;
+  width: 60px;
+  top: 48px;
+  background-color: #383838;
 }
 
 .tabs {
-    text-align: center;
-    width: 80%;
-    margin-left: 10%;
-    /* border-radius: 50px; */
-    height: 47px;
-    border: none;
-    margin-top: 8px;
-    background-color: #383838;
-    outline: none;
-    background-repeat: no-repeat;
-    background-size: 90%;
-    background-position: center;
+  text-align: center;
+  width: 80%;
+  margin-left: 10%;
+  /* border-radius: 50px; */
+  height: 47px;
+  border: none;
+  margin-top: 8px;
+  background-color: #383838;
+  outline: none;
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: center;
 }
 
 .tabs:hover {
-    text-align: center;
-    width: 80%;
-    margin-left: 10%;
-    border-radius: 50px;
-    height: 47px;
-    border: none;
-    margin-top: 8px;
-    background-color: #383838;
-    transition: 150ms ease-in-out;
-    outline: none;
-    background-repeat: no-repeat;
-    background-size: 80%;
-    background-position: center;
+  text-align: center;
+  width: 80%;
+  margin-left: 10%;
+  border-radius: 50px;
+  height: 47px;
+  border: none;
+  margin-top: 8px;
+  background-color: #383838;
+  transition: 150ms ease-in-out;
+  outline: none;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
 }
 
 .tabs:active {
-    text-align: center;
-    width: 80%;
-    margin-left: 10%;
-    border-radius: 50px;
-    height: 47px;
-    border: none;
-    margin-top: 8px;
-    transition: 150ms ease-in-out;
-    background-color: #383838;
-    outline: none;
-    background-repeat: no-repeat;
-    background-size: 60%;
-    background-position: center;
+  text-align: center;
+  width: 80%;
+  margin-left: 10%;
+  border-radius: 50px;
+  height: 47px;
+  border: none;
+  margin-top: 8px;
+  transition: 150ms ease-in-out;
+  background-color: #383838;
+  outline: none;
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: center;
 }
 
 .tabsText {
-    text-align: center;
-    font-size: 12px;
-    margin: 1px;
+  text-align: center;
+  font-size: 12px;
+  margin: 1px;
 }
 
 #newTabButton {
-    position: absolute;
-    background-color: rgb(83, 83, 83);
-    bottom: 58px;
-    border-radius: 50px;
-    font-size: 30px;
+  position: absolute;
+  background-color: rgb(83, 83, 83);
+  bottom: 58px;
+  border-radius: 50px;
+  font-size: 30px;
 }
 
 #newTabButton:hover {
-    position: absolute;
-    background-color: rgb(95, 95, 95);
-    bottom: 58px;
-    border-radius: 50px;
-    font-size: 30px;
-    transition: 150ms ease-in-out;
+  position: absolute;
+  background-color: rgb(95, 95, 95);
+  bottom: 58px;
+  border-radius: 50px;
+  font-size: 30px;
+  transition: 150ms ease-in-out;
 }
 
 #newTabButton:active {
-    position: absolute;
-    background-color: rgb(83, 83, 83);
-    bottom: 58px;
-    border-radius: 50px;
-    font-size: 30px;
-    transition: 150ms ease-in-out;
+  position: absolute;
+  background-color: rgb(83, 83, 83);
+  bottom: 58px;
+  border-radius: 50px;
+  font-size: 30px;
+  transition: 150ms ease-in-out;
 }
 
 #mainWebViewContainer {
-    width: 1090px;
-    height: 100%;
-    z-index: 10;
-    margin-left: 60px;
-    margin-top: 48px;
+  width: 1090px;
+  height: 100%;
+  z-index: 10;
+  margin-left: 60px;
+  margin-top: 48px;
 }
 
 #mainWebView {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 #activeHr {
-    display: none;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid rgb(255, 31, 31);
-    padding: 0;
+  display: none;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid rgb(255, 31, 31);
+  padding: 0;
 }
 
 #inactiveHr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid rgb(122, 122, 122);
-    padding: 0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid rgb(122, 122, 122);
+  padding: 0;
 }

@@ -2,82 +2,74 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Font Awesome for icons -->
-    <script defer src="node_modules/@fortawesome/fontawesome-free/js/brands.js"></script>
-    <script defer src="node_modules/@fortawesome/fontawesome-free/js/solid.js"></script>
-    <script defer src="node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"></script>
+  <!-- Font Awesome for icons -->
+  <script defer src="node_modules/@fortawesome/fontawesome-free/js/brands.js"></script>
+  <script defer src="node_modules/@fortawesome/fontawesome-free/js/solid.js"></script>
+  <script defer src="node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"></script>
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 
-    <title>Browser</title>
+  <title>Just A Browser</title>
 </head>
 
 <body onresize="resizeWebView()">
 
-    <div id="app">
+  <div id="app">
 
-        <!-- Top Bar -->
-        <div id="topBar">
-            <!-- Controls -->
-            <div id="controlsDiv">
-                <i id="homeButton" class="fas fa-home fa-3x controls"></i>
-                <i id="backButton" class="fas fa-arrow-left fa-3x controls"></i>
-                <i id="forwardButton" class="fas fa-arrow-right fa-3x controls"></i>
-                <i id="reloadButton" class="fas fa-redo-alt fa-3x controls"></i>
-            </div>
-            <!-- Controls End -->
+    <!-- Top Bar -->
+    <div id="topBar">
+      <!-- Controls -->
+      <div id="controlsDiv">
+        <i id="homeButton" class="fas fa-home fa-3x controls"></i>
+        <i id="backButton" class="fas fa-arrow-left fa-3x controls"></i>
+        <i id="forwardButton" class="fas fa-arrow-right fa-3x controls"></i>
+        <i id="reloadButton" class="fas fa-redo-alt fa-3x controls"></i>
+      </div>
+      <!-- Controls End -->
 
-            <!-- Input -->
-            <div id="inputDiv">
-                <form>
-                    <input type="text" id="inputField" placeholder="Search" autofocus spellcheck="false"
-                        onclick="this.select()">
-                    <button type="submit" id="goButton" hidden></button>
-                </form>
-            </div>
-            <!-- Input End -->
-        </div>
-        <!-- Top Bar End -->
+      <!-- Input -->
+      <div id="inputDiv">
+        <form>
+          <input type="text" id="inputField" placeholder="Search" autofocus spellcheck="false" onclick="this.select()">
+          <button type="submit" id="goButton" hidden></button>
+        </form>
+      </div>
+      <div id="credits">
+        <h5>Developed by Virej Dasani</h5>
 
-        <!-- Tabs -->
-        <div id="tabContainer">
-            <button id="tab0" class="tabs"></button>
-            <p id="tabText0" class="tabsText"></p>
-            <hr id="activeHr">
-            <hr id="inactiveHr">
+      </div>
 
-            <button id="tab1" class="tabs"></button>
-            <p id="tabText1" class="tabsText"></p>
-            <hr id="activeHr">
-            <hr id="inactiveHr">
-
-            <button id="tab2" class="tabs"></button>
-            <p id="tabText2" class="tabsText"></p>
-            <hr id="activeHr">
-            <hr id="inactiveHr">
-
-            <button id="newTabButton" class="tabs">+</button>
-
-        </div>
-        <!-- Tabs End -->
-
-        <!-- Webview -->
-        <div id="mainWebViewContainer">
-            <webview id="mainWebView" src="https://google.com" allowpopups>
-            </webview>
-        </div>
-        <!-- Webview End -->
-
+      <!-- Input End -->
     </div>
+    <!-- Top Bar End -->
 
-    <!-- The order the scripts are in, is on purpose, load functions first -->
-    <script src="functions.js"></script>
-    <script src="index.js"></script>
-    <script src="webviewControls.js"></script>
+    <!-- Tabs -->
+    <div id="tabContainer">
+      <button id="tab0" class="tabs"></button>
+      <p id="tabText0" class="tabsText"></p>
+      <hr id="activeHr">
+      <hr id="inactiveHr">
+      <!-- <button id="newTabButton" class="tabs">+</button> -->
+    </div>
+    <!-- Tabs End -->
+
+    <!-- Webview -->
+    <div id="mainWebViewContainer">
+      <webview id="mainWebView" src="https://google.com" allowpopups>
+      </webview>
+    </div>
+    <!-- Webview End -->
+
+  </div>
+
+  <!-- The order the scripts are in, is on purpose, load functions first -->
+  <script src="functions.js"></script>
+  <script src="index.js"></script>
+  <script src="webviewControls.js"></script>
 </body>
 
 </html>
